@@ -123,7 +123,7 @@ echo "$IP" > /usr/bin/vendor_code
 }
 
 function_verify () {
-  permited=$(curl -sSL "https://raw.githubusercontent.com/rudi9999/Control/master/Control-IP")
+  permited=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/actualizar/master/Control-IP")
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   echo -e "\n\n\n\033[1;31m====================================================="
   echo -e "\033[1;31m       ¡LA IP $(wget -qO- ipv4.icanhazip.com) NO ESTA AUTORIZADA!"
@@ -133,7 +133,7 @@ function_verify () {
   exit 1
   } || {
   ### INTALAR VERCION DE SCRIPT
-  v1=$(curl -sSL "https://raw.githubusercontent.com/rudi9999/Generador_Gen_VPS-MX/master/Vercion")
+  v1=$(curl -sSL "https://raw.githubusercontent.com/Waldo60/actualizar/master/Vercion")
   echo "$v1" > /etc/versin_script
   }
 }
@@ -157,7 +157,7 @@ echo -e "\033[1;31m- \033[1;32mRecibido!"
 [[ -e $HOME/$arqx ]] && veryfy_fun $arqx
 } || echo -e "\033[1;31m- \033[1;31mFalla (no recibido!)"
 done
-[[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://raw.githubusercontent.com/rudi9999/Generador_Gen_VPS-MX/master/Install/trans &> /dev/null
+[[ ! -e /usr/bin/trans ]] && wget -O /usr/bin/trans https://raw.githubusercontent.com/Waldo60/actualizar/master/Install/trans &> /dev/null
 [[ -e /bin/http-server.py ]] && mv -f /bin/http-server.py /bin/http-server.sh && chmod +x /bin/http-server.sh
 IVAR2="/etc/key-gerador"
 echo "$Key" > $IVAR
@@ -165,7 +165,7 @@ echo "$Key" > $IVAR
 cp /bin/http-server.sh /etc/SCRIPT
 mv /etc/SCRIPT/http-server.sh /etc/SCRIPT/http-server.py
 chmod +x /etc/SCRIPT/http-server.py
-wget https://raw.githubusercontent.com/rudi9999/Generador_Gen_VPS-MX/master/gerador/gerar.sh &>/dev/null
+wget https://raw.githubusercontent.com/Waldo60/actualizar/master/gerador/gerar.sh &>/dev/null
 mv gerar.sh /etc/SCRIPT
 chmod +x /etc/SCRIPT/gerar.sh
 cd /etc/SCRIPT/
