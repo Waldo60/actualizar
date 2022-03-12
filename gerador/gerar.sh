@@ -626,7 +626,7 @@ if [[ $1 = 1 ]]; then
 msg -bar
 echo -e "\033[7;49;35m             LINKS INSTALL SCRIPT VPS•MX             "
 msg -bar
-echo -e "\033[1;37msudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/rudi9999/VPS-MX-8.0/master/instalscript.sh &> /dev/null; chmod 777 instalscript.sh* && ./instalscript.sh*"
+echo -e "\033[1;37msudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/Waldo60/ocho/master/instalscript.sh &> /dev/null; chmod 777 instalscript.sh* && ./instalscript.sh*"
 msg -bar
 [[ $2 = 1 ]] && echo -ne "\033[1;37m Enter para Finalizar"
 [[ $2 = 1 ]] && read foo
@@ -758,7 +758,7 @@ info_fecha=$(printf '%-16s' "${_fecha}")
 info_hora=$(printf '%-16s' "${_hora}")
 
 msg -bar
-echo -e "\033[7;49;35m      =====>>►► 🐲 GEN SPIDER•VPS 🐲 ◄◄<<=====       \033[0m"
+echo -e "\033[7;49;35m      =====>>►► 🐲 GEN SPIDER•VPS.BO 🐲 ◄◄<<=====       \033[0m"
 msg -bar
 echo -e " \033[1;32mSISTEMA                 MEMORIA         PROSESADOR"
 echo -e " \033[1;49;96mS.O: \033[1;37m$info_so \033[1;49;96mRAM:    \033[1;32m$info_ram1 \033[1;49;96mCPU: \033[1;32m$_core"
