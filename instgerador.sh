@@ -9,7 +9,7 @@ rm $(pwd)/$0
 install_ini () {
 clear
 echo -e "$BARRA"
-echo -e "\033[92m        -- INSTALANDO PAQUETES NECESARIOS -- "
+echo -e "\033[92m        == INSTALANDO PAQUETES NECESARIOS == "
 echo -e "$BARRA"
 #bc
 [[ $(dpkg --get-selections|grep -w "bc"|head -1) ]] || apt-get install bc -y &>/dev/null
