@@ -724,7 +724,7 @@ export -f fun_ip
 clear
 #########VISUALIZACION DE MENU
 msg -bar
-echo -e "\e[97m\033[1;41m       =====>>►► 🐲 PANEL VPS•MX 🐲 ◄◄<<=====       \033[1;37m"
+echo -e "\e[97m\033[1;41m       =====>>►► 🐲 PANEL VPS•TSTT 🐲 ◄◄<<=====       \033[1;37m"
 msg -bar
 echo -e "\033[1;31m   CPU: \033[1;37mNo. DE NUCLEOS:\033[1;32m $_core \033[1;37m\033[1;31m FECHA: \033[1;37m$_hora"
 echo -e "\033[1;31m   RAM: \033[1;37m TOTAL: \033[1;32m$ram1 \033[1;37m USADA: \033[1;32m$ram3 \033[1;37m LIBRE: \033[1;32m$ram2"
@@ -891,7 +891,7 @@ echo -e "\033[1;97m   LIMITADOR:\033[1;92m $verificar \033[1;97m DESBLOQUEADOR A
 # NOVO SISTEMA DE MENUS
 msg -bra " VERSION INSTALADA: \033[1;31m[\033[1;32m $vesaoSCT\033[1;97m"
 msg -bar
-menu_func "ADMINISTRAR CUENTAS (SSH/SSL/DROPBEAR)" "ADMINISTRAR CUENTAS (SS/SSRR)" "\033[1;100mMENU DE INSTALACIONES" "PUERTOS ACTIVOS" "HERRAMIENTAS y EXTRAS" "CAMBIAR COLORES DEL PANEL" " -fi ${monitorservi} MONITOR DE SERVICIOS" "-fi $AutoRun AUTO INICIAR" "-vd ACTUALIZAR PANEL" "-vm DESINSTALAR PANEL" 
+menu_func "ADMINISTRAR CUENTAS (SSH/SSL/DROPBEAR)" "ADMINISTRAR CUENTAS (SS/SSRR)" "\033[1;100mMENU DE CONEXIONES" "PUERTOS ACTIVOS" "HERRAMIENTAS y EXTRAS" "CAMBIAR COLORES DEL PANEL" " -fi ${monitorservi} MONITOR DE SERVICIOS" "-fi $AutoRun AUTO EJECUTAR" "-vd ACTUALIZAR PANEL" "-vm DESINSTALAR PANEL" 
 msg -bar && echo -ne "$(msg -verd "[0]") $(msg -verm2 ">") "&& msg -bra "\033[1;41mSALIR DEL SCRIPT"
 msg -bar
 # FIM
