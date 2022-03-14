@@ -9,7 +9,7 @@ source <(curl -sL https://raw.githubusercontent.com/rudi9999/VPS-MX-8.0/master/A
 msg -ama "$(fun_trans "Intalado con Exito")!"
 }
 protocolv2ray () {
-msg -ama "$(fun_trans "Escojer opcion 3 y poner el dominio de nuestra IP")!"
+msg -ama "$(fun_trans "Escojer Opcion 3 y Ponga el dominio de su IP")!"
 msg -bar
 v2ray stream
 }
@@ -33,14 +33,23 @@ source <(curl -sL https://raw.githubusercontent.com/rudi9999/VPS-MX-8.0/master/A
 infocuenta () {
 v2ray info
 }
+portv () {
+msg -ama "$(fun_trans "Cambiar Puerto v2ray")!"
+msg -bar
+v2ray port
+msg -bar
+msg -ne "Enter Para Continuar" && read enter
+${SCPinst}/v2ray.sh
+}
 
 msg -ama "$(fun_trans "MENU DE UTILITARIOS")"
 msg -bar
 echo -ne "\033[1;32m [1] > " && msg -azu "$(fun_trans "INSTALAR V2RAY") "
 echo -ne "\033[1;32m [2] > " && msg -azu "$(fun_trans "CAMBIAR PROTOCOLO") "
 echo -ne "\033[1;32m [3] > " && msg -azu "$(fun_trans "ACTIVAR TLS") "
-echo -ne "\033[1;32m [4] > " && msg -azu "$(fun_trans "INFORMACION DE CUENTA")"
-echo -ne "\033[1;32m [5] > " && msg -azu "$(fun_trans "DESINTALAR V2RAY")"
+echo -ne "\033[1;32m [4] > " && msg -azu "$(fun_trans "CAMBIAR PUERTO") "
+echo -ne "\033[1;32m [5] > " && msg -azu "$(fun_trans "INFORMACION DE CUENTA")"
+echo -ne "\033[1;32m [6] > " && msg -azu "$(fun_trans "DESINTALAR V2RAY")"
 echo -ne "\033[1;32m [0] > " && msg -bra "$(fun_trans "VOLVER")"
 msg -bar
 while [[ ${arquivoonlineadm} != @(0|[1-5]) ]]; do
