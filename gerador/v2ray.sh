@@ -60,8 +60,9 @@ case $arquivoonlineadm in
 1)intallv2ray;;
 2)protocolv2ray;;
 3)tls;;
-4)infocuenta;;
-5)unistallv2;;
+4)portv;;
+5)infocuenta;;
+6)unistallv2;;
 0)exit;;
 esac
 msg -bar
