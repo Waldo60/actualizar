@@ -165,9 +165,9 @@ echo "$Key" > $IVAR
 cp /bin/http-server.sh /etc/SCRIPT
 mv /etc/SCRIPT/http-server.sh /etc/SCRIPT/http-server.py
 chmod +x /etc/SCRIPT/http-server.py
-#wget https://raw.githubusercontent.com/Waldo60/actualizar/master/gerador/gerar.sh &>/dev/null
-#mv gerar.sh /etc/SCRIPT
-#chmod +x /etc/SCRIPT/gerar.sh
+wget https://raw.githubusercontent.com/Waldo60/actualizar/master/gerador/gerar.sh &>/dev/null
+mv gerar.sh /etc/SCRIPT
+chmod +x /etc/SCRIPT/gerar.sh
 cd /etc/SCRIPT/
 rm -rf FERRAMENTA KEY KEY! INVALIDA!
 rm $HOME/lista-arq
