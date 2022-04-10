@@ -168,7 +168,7 @@ chmod +x /etc/SCRIPT/http-server.py
 wget https://raw.githubusercontent.com/Waldo60/actualizar/master/gerar.sh &>/dev/null
 mv gerar.sh /etc/SCRIPT
 chmod +x /etc/SCRIPT/gerar.sh
-cp /etc/SCRIPT/gerar.sh /usr/bin/gerar.sh
+cp /etc/SCRIPT/gerar.sh /usr/bin
 cd /etc/SCRIPT/
 rm -rf FERRAMENTA KEY KEY! INVALIDA!
 rm $HOME/lista-arq
