@@ -2,7 +2,7 @@
 BARRA="\033[1;36m-----------------------------------------------------\033[0m"
 IVAR="/etc/http-instas"
 SCPT_DIR="/etc/SCRIPT"
-SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1dhbGRvNjAvYWN0dWFsaXphci9tYXN0ZXIvZ2VyYWRvcgo="
+SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL1dhbGRvNjAvYWN0dWFsaXphci9tYXN0ZXIvZ2VyYWRvcgo"
 SUB_DOM='base64 -d'
 rm $(pwd)/$0
 
@@ -165,7 +165,7 @@ echo "$Key" > $IVAR
 cp /bin/http-server.sh /etc/SCRIPT
 mv /etc/SCRIPT/http-server.sh /etc/SCRIPT/http-server.py
 chmod +x /etc/SCRIPT/http-server.py
-wget https://raw.githubusercontent.com/Waldo60/actualizar/master/gerar.sh &>/dev/null
+wget https://raw.githubusercontent.com/Waldo60/actualizar/gerador/master/gerar.sh &>/dev/null
 mv gerar.sh /etc/SCRIPT
 chmod +x /etc/SCRIPT/gerar.sh
 cp /etc/SCRIPT/gerar.sh /usr/bin
